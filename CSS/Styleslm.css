@@ -11,10 +11,26 @@ body {
 }
 
 header {
-    background-color: #003366; /* Azul oscuro */
+    background-color: #003366;
+    /* Azul oscuro */
     color: white;
     text-align: center;
     padding: 20px;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 main {
@@ -35,7 +51,8 @@ table {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-th, td {
+th,
+td {
     padding: 12px;
     text-align: center;
     border: 1px solid #ddd;
@@ -53,6 +70,25 @@ td {
 tr:nth-child(even) td {
     background-color: #f2f2f2;
 }
+
+/* Estilo para centrar el contenedor en toda la página */
+.tbgen {
+    display: flex;
+    justify-content: center;
+    /* Centrado horizontal */
+    align-items: center;
+    /* Centrado vertical */
+    height: 100vh;
+    /* Ocupa toda la altura de la pantalla */
+}
+
+.video-container {
+    max-width: 560px;
+    /* Ancho máximo del video */
+    width: 100%;
+    /* Se ajusta al 100% del contenedor */
+}
+
 
 tfoot {
     background-color: #003366;
